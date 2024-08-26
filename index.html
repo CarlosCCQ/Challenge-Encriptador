@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__imagen" src="./assets/Logo.png" alt="Logo Alura">
+    </header>
+    <main class="main">
+        <section class="encriptador__botones">
+            <textarea id="seccionEncriptadorTextarea" class="seccion__encriptador__textarea" placeholder="Ingrese el texto aqui" spellcheck="false"></textarea>
+            <div class="advertencia__botones">
+                <div class="advertencia__informacion">
+                    <img class="icono__advetencia" src="./assets/bi_exclamation-circle-fill.png" alt="Icono de Advertencia">
+                    <p class="advertencia__informacion__texto">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="botonEncriptar" class="encriptar"><p class="palabra__encriptar">Encriptar</p></button>
+                    <button id="botonDesencriptar" class="desencriptar"><p class="palabra__desencriptar">Desencriptar</p></button>
+                </div>
+            </div>
+        </section>
+        <section id="mensajeFinal" class="mensaje__final">
+            <div id="imagenMuñeco" class="imagen__muñeco">
+                <img src="./assets/Muñeco.png" alt="Muñeco Alura">
+            </div>
+            <div id="textoMuñeco" class="texto__muñeco">
+                <p id="textoSuperior" class="texto__superior">Ningún mensaje fue encontrado</p>
+                <p id="textoInferior" class="texto__inferior">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button id="botonCopiar" class="copiar oculto"><p class="palabra__copiar">Copiar</p></button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Jhan Carlos Ccanto Quispe</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
